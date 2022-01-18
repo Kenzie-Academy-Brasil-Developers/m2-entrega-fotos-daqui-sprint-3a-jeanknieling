@@ -5,10 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotos Daqui</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
 
-    <h1>Fotos Daqui</h1>
-    
+    <header class="headerContainer">
+        <h1>Fotos Daqui</h1>
+        <section class="searchSection">
+            <p class="searchParagraph">Pesquisar por</p>
+            <form class="form" action="">
+                <input class="searchInput" type="text" placeholder="Digite aqui o termo">
+                <button class="searchButton">Pesquisar</button>
+            </form>
+            <div class="shortcutButtonsContainer">
+                <button class="searchShortcutButton" id="people">Pessoas</button>
+                <button class="searchShortcutButton" id="decoration">Decorações</button>
+                <button class="searchShortcutButton" id="home-office">Home Office</button>
+            </div>
+        </section>
+    </header>
+    <main class="mainContainer">
+        <img class="quadradinhos" src="./src/img/firula.svg" alt="Imagem de quadradinhos">
+        <section class="photosArea">
+            <figure>
+                <img class="mainImage" src="https://www12.senado.leg.br/jovemsenador/home/imagens/carregando/@@images/image.gif" alt="Gif de loading">
+                <figcaption>GIF de loading</figcaption>
+            </figure>
+            <section class="informationsContainer">
+                <div class="photoInformations">
+                    <div class="signal"></div>
+                    <p class="photoDescription">Loading...</p>
+                    <p class="photoTakerDescription">Imagem tirada por: Loading...</p>
+                </div>
+                <div class="arrowsContainer">
+                    <img class="arrow" id="rightArrow" src="./src/img/ButtonRightArrow.svg" alt="Seta para a direita">
+                    <img class="arrow" id="leftArrow" src="./src/img/ButtonLeftArrow.svg" alt="Seta para a esquerda">
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script type="module" src="./src/js/script.js"></script>
+
 </body>
 </html>
